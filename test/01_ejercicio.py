@@ -8,8 +8,8 @@ from selenium.webdriver.remote.webelement import WebElement
 chrome_driver_path = 'drivers/chromedriver'
 gecko_driver_path = 'drivers/geckodriver'
 url = 'https://laboratorio.qaminds.com/'
-service = Service(chrome_driver_path)
-driver = webdriver.Chrome(service=service)
+service = Service(gecko_driver_path)
+driver = webdriver.Firefox(service=service)
 driver.maximize_window()
 
 # Abrir pagina
@@ -17,7 +17,7 @@ driver.get(url)
 
 word = "iphone"
 #buscador 
-time.sleep(5)
+driver.implicitly_wait(5)
 search_barra : WebElement = driver.find_element(By.XPATH,'//*[@id="search"]/input')
 assert search_barra.is_displayed(), "barra no visible"
 search_barra.clear()
@@ -25,9 +25,9 @@ search_barra.send_keys(word)
 button_search : WebElement = driver.find_element(By.XPATH, '//*[@id="search"]/span/button')
 assert button_search.is_displayed, "no existe el boton"
 button_search.click()
-by_img : WebElement = driver.find_element(By.XPATH,'//img[@alt="iPhone"]')
+by_img : WebElement = driver.find_element(By.XPATH,'//img[@alt="samsung"]')
 assert by_img.is_displayed(), "no esta la imagen"
 
 
 # Cerrar navegador
-#driver.quit()
+driver.quit()
