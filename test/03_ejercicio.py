@@ -43,7 +43,7 @@ login_btn = WebElement = driver.find_element(By.XPATH, '//input[@value="Login"]'
 assert login_btn.is_displayed(), "login is not visible"
 login_btn.click()
 
-clase_error : WebElement = driver.find_element(By.XPATH,"//*[contains(@class,'fa-exclamation-circle')]")
+clase_error : WebElement = driver.find_element(By.XPATH,"//*[contains(@class,'fa-exclamation-circle')]")#too find by.CSS ej: .fa-exclamation-circle
 assert clase_error.is_displayed(),"no hay error"
 assert clase_error.text == " Warning: No match for E-Mail Address and/or Password.", "no coincide el texto de error"
 
