@@ -26,9 +26,10 @@ la_tablet : WebElement = driver.find_element(By.PARTIAL_LINK_TEXT, 'Samsung Gala
 assert la_tablet.is_displayed(), "no visible tablet"
 la_tablet.click()
 
-costo : WebElement = driver.find_element(By.XPATH, '//*[@id="content"]/div/div[2]/ul[2]/li[1]/h2')
+costo : WebElement = driver.find_element(By.XPATH, '//*[@id="content"]/div/div[2]/ul[2]/li[1]/h2') #mejorar xpath..
 assert costo.is_displayed(), "no existe el valor"
-assert costo.text == "241.99", "el precio no es de "
+assert costo.text == "$241.99", "el precio no es de 241.99 "
+
 
 wish_list : WebElement = driver.find_element(By.XPATH, '//*[@id="content"]/div/div[2]/div[1]/button[1]')
 assert wish_list.is_displayed(), "no existe boton wish"
