@@ -22,7 +22,8 @@ search_barra : WebElement = driver.find_element(By.XPATH,'//*[@id="search"]/inpu
 assert search_barra.is_displayed(), "barra no visible"
 search_barra.clear()
 search_barra.send_keys(word)
-button_search : WebElement = driver.find_element(By.XPATH, '//*[@id="search"]/span/button')
+
+button_search : WebElement = driver.find_element(By.XPATH, '//*[@id="search"]//button')
 assert button_search.is_displayed, "no existe el boton"
 button_search.click()
 by_img : WebElement = driver.find_element(By.XPATH,'//img[@alt="samsung"]')
