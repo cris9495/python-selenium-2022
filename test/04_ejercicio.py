@@ -21,14 +21,19 @@ laptop : WebElement = driver.find_element(By.LINK_TEXT, "Laptops & Notebooks")
 assert laptop.is_displayed(), "no hay opcion lapton"
 laptop.click()
 
-opc_win : WebElement = driver.find_element(By.LINK_TEXT, "Windows (0)")
+opc_win : WebElement = driver.find_element(By.PARTIAL_LINK_TEXT, "Windows")
 assert opc_win.is_displayed(), "windows is not visible"
 opc_win.click()
 
-textoS : WebElement = driver.find_element(By.NAME, "There are no products to list in this category.")
-assert textoS.is_displayed(), "texto is not visible"
+time.sleep(5)
+content = driver.find_element(By.XPATH, "//*[@id='content']/p")
+assert content.is_displayed(), "content is not visible"
+assert content.text == "There are no products to list in this category.", "windows is not empty"
 
-
+time.sleep(5)
+continue_btn : WebElement = driver.find_element(By.LINK_TEXT, "Continue")
+assert continue_btn.is_displayed(), "continue is not visible"
+continue_btn.click()
 
 
 
