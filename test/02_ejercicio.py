@@ -31,7 +31,7 @@ assert costo.is_displayed(), "no existe el valor"
 assert costo.text == "$241.99", "el precio no es de 241.99 "
 
 
-wish_list : WebElement = driver.find_element(By.XPATH, '//*[@id="content"]/div/div[2]/div[1]/button[1]')
+wish_list : WebElement = driver.find_element(By.XPATH, '//button[@data-original-title="Add to Wish List"]')
 assert wish_list.is_displayed(), "no existe boton wish"
 wish_list.click()
 
