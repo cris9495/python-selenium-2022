@@ -1,7 +1,10 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webdriver import WebDriver
 from lib.factory.factory_driver import get_driver
+from lib.config import config
 
+config.load_config()
+print(config.get_implicit_wait())
 
 
 
@@ -10,9 +13,8 @@ driver: WebDriver = None
 
 def setup():
     global driver
-    
-    driver = get_driver()
-    
+    driver = get_driver("chrome")
+    driver.implicitly_wait(15)
 
 
 def test_tablets():
