@@ -15,8 +15,9 @@ class TestRegisterPage:
         assert self.register_page.get_privacy() == "Privacy Policy", "Not text privacy"
 
     def test_advertise_email(self):
-        self.register_page.set_email("azul")
-        self.register_page.opc_continue()
+        self.register_page.set_email('azul')
+        self.register_page.opc_continue()             
+        assert self.register_page.get_email_validation() == """Please include an '@' in the email address. 'azul' is missing an '@'."""
 
     def teardown_method(self):
         if self.driver:
