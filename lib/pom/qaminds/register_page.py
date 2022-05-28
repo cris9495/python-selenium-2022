@@ -32,3 +32,8 @@ class RegisterPage(BasePage):
 
     def opc_continue(self):
         self._click(self._continue)
+
+    def get_email_validation(self):
+        email_camp = self._get_element(self._email)
+        return email_camp.get_attribute('validationMessage')
+       

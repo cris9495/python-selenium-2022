@@ -12,6 +12,7 @@ class HomePage(BasePage):
     _cart_total = (By.ID, 'cart-total')
     _currency = (By.XPATH,  "//*[@id='form-currency']//strong")
     _currency_dropdown = (By.XPATH, "//*[@id='form-currency']//button[@data-toggle]")
+    _sin_coincidence = (By.XPATH, "//*[@id='content']/p[2]")
 
     def __init__(self, driver: WebDriver):
         wait: WebDriverWait = WebDriverWait(driver, config.get_explicit_wait_medium())
@@ -68,5 +69,12 @@ class HomePage(BasePage):
         loc = (By.PARTIAL_LINK_TEXT, name)
         #product : WebElement = self._wait_until_clickable(loc) ya se esta llamando en click
         self._click(loc)
+
+    def get_product(self, name: str):
+        loc = (By.PARTIAL_LINK_TEXT, name)
+        return self._get_text(loc)
+
+    def get_not_concidence(self):
+        return self._get_text(self._sin_coincidence)
 
         
