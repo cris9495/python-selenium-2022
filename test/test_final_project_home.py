@@ -4,7 +4,7 @@ from lib.config import config
 from lib.pom.qaminds.home_page import HomePage
 
 
-class TestLoginPage:
+class TestHomePage:
 
     def setup_method(self):
         self.driver: WebDriver = get_driver()

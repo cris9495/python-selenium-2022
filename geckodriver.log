@@ -1785,3 +1785,71 @@ console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message f
 
 ###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
 
+1653743491070	geckodriver	INFO	Listening on 127.0.0.1:54506
+1653743494117	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54507" "-no-remote" "-profile" "C:\\Users\\gerlier\\AppData\\Local\\Temp\\rust_mozprofileiGJBUl"
+1653743498766	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\gerlier\\AppData\\Local\\Temp\\rust_mozprofileiGJBUl\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54507/devtools/browser/f4667453-8fa0-41cc-ac1e-1662947ac5c0
+1653743510619	Marionette	INFO	Listening on port 54515
+1653743510893	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1653743514719	Marionette	INFO	Stopped listening on port 54515
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+1653743516326	geckodriver	INFO	Listening on 127.0.0.1:54591
+1653743519354	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54592" "-no-remote" "-profile" "C:\\Users\\gerlier\\AppData\\Local\\Temp\\rust_mozprofiledxC3xR"
+1653743520637	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\gerlier\\AppData\\Local\\Temp\\rust_mozprofiledxC3xR\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54592/devtools/browser/6a7337a3-9118-4ebe-893b-db35a8b13932
+1653743525677	Marionette	INFO	Listening on port 54600
+1653743525847	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1653743528421	Marionette	INFO	Stopped listening on port 54600
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1653743652968	geckodriver	INFO	Listening on 127.0.0.1:54889
+1653743655992	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54890" "-no-remote" "-profile" "C:\\Users\\gerlier\\AppData\\Local\\Temp\\rust_mozprofileBXTtLx"
+1653743656613	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\gerlier\\AppData\\Local\\Temp\\rust_mozprofileBXTtLx\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54890/devtools/browser/75f3ee48-09a2-4cc1-9ce5-9401129fbf0f
+1653743661116	Marionette	INFO	Listening on port 54898
+1653743661302	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1653743663872	Marionette	INFO	Stopped listening on port 54898
+[Parent 52924, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+console.warn: SearchService: "_init: abandoning init due to shutting down"
+JavaScript error: , line 0: uncaught exception: 2147500036
+JavaScript error: , line 0: uncaught exception: 2147500036
+JavaScript error: , line 0: uncaught exception: 2147500036
+JavaScript error: , line 0: uncaught exception: 2147500036
+JavaScript error: , line 0: uncaught exception: 2147500036
+JavaScript error: , line 0: uncaught exception: 2147500036
+JavaScript error: , line 0: uncaught exception: 2147500036
+JavaScript error: , line 0: uncaught exception: 2147500036
+console.log: "RemoteSettingsWorker error: Error: Can't import when we've started shutting down."
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: resource://gre/modules/CrashManager.jsm, line 898: AbortError: IOUtils: Shutting down and refusing additional I/O tasks
+RunWatchdog: Mainthread nested event loops during hang: 
+ --- (no nested event loop active)
+1653743739124	geckodriver	INFO	Listening on 127.0.0.1:55032
+1653743742064	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55033" "-no-remote" "-profile" "C:\\Users\\gerlier\\AppData\\Local\\Temp\\rust_mozprofilewHJ1PF"
+1653743742800	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\gerlier\\AppData\\Local\\Temp\\rust_mozprofilewHJ1PF\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:55033/devtools/browser/19006da6-0ee0-4331-9bcf-1d85e4b781e0
+1653743748490	Marionette	INFO	Listening on port 55044
+1653743748966	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1653743751129	Marionette	INFO	Stopped listening on port 55044
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1653743752632	geckodriver	INFO	Listening on 127.0.0.1:55097
+1653743755648	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55098" "-no-remote" "-profile" "C:\\Users\\gerlier\\AppData\\Local\\Temp\\rust_mozprofileMDfWpM"
+1653743756300	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\gerlier\\AppData\\Local\\Temp\\rust_mozprofileMDfWpM\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:55098/devtools/browser/9009819b-5648-4c88-a840-fb2a98577841
+1653743761570	Marionette	INFO	Listening on port 55104
+1653743762063	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1653743764295	Marionette	INFO	Stopped listening on port 55104
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 996: Error: Connection is not open.
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
